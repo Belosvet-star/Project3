@@ -1,6 +1,8 @@
-*
-	font-family: 'Roboto', sans-serif
-@import "variables"
-@import "mixins"
-@import "general"
-@import "media"
+
+* {
+	font-family: 'Museo Sans', sans-serif;
+}
+@import "variables";
+@import "mixins";
+@import "general";
+@import "media";
