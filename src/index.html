@@ -1,102 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <meta name="description" content="Moj project">
-   <meta name="autor" content="Belosvet">
-   <title>Pulsometr</title>
-   <!-- <link rel="shortcut icon" href="icons\favicon.ico" type="image/x-icon"> --> <!-- фавиконки -->
-   <link rel="stylesheet" href="css/fonts.css"> <!-- локальные щрифты -->
-   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">  --><!-- это ссылки на гугл фонтс -->
-   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">  <!-- или подключать normalize -->
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  --><!-- ссылка на нормалайз, можно путь к файлу в папке -->
-   <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> --> <!-- если будет использоваться бутстрап сетка -->
-   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
-   <!-- если будет использоваться иконочный шрифт -->
-   <link rel="stylesheet" href="css/style.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Moj project">
+	<meta name="autor" content="Belosvet">
+	<title>Pulsometr</title>
+	<!-- <link rel="shortcut icon" href="icons\favicon.ico" type="image/x-icon"> --> <!-- фавиконки -->
+	<link rel="stylesheet" href="css/fonts.css"> <!-- локальные щрифты -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">  --><!-- это ссылки на гугл фонтс -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">  <!-- или подключать normalize -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  --><!-- ссылка на нормалайз, можно путь к файлу в папке -->
+	<!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> --> <!-- если будет использоваться бутстрап сетка -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
+	<!-- если будет использоваться иконочный шрифт -->
+	<link rel="stylesheet" href="css/slick.css"/>
+	<!-- карусель slick -->
+	<link rel="stylesheet" href="css/style.min.css">
 
-   </head>
+	</head>
 <body>
-   <section class="promo">
-      <div class="container">
-         <header class="header">
-            <a href="#" class="header__logo"> <!-- логотип как ссылка на главную страниц -->
-               <img src="icons/logo.png" alt="">
-            </a> 
-            <div class="header__official">
-               Официальный представитель
-               <span>Garmin, Polar, Suunto</span>
-            </div>
-            <div class="header__contacts">
-               <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74 </a> <!-- телефон всегда как ссылка -->
-               <button class="button">Заказать звонок</button>
-            </div>
-         </header>
-         <div class="promo__wrapper">
-            <h1 class="promo__header">Подбор пульсометра
-            </h1>
-            <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
-            <div class="promo__icons">
-               <div class="promo__icon">
-                  <img src="icons/main1 icon.png" alt="icon1">
-                  Время подбора: 
-                  10 минут
-               </div>
-               <div class="promo__icon">
-                  <img src="icons/main2 icon.png" alt="icon2">
-                  Бесплатная 
-                  доставка
-               </div>
-               <div class="promo__icon">
-                  <img src="icons/main3 icon.png" alt="icon3">
-                  Ответим 
-                  на все вопросы
-               </div>
-            </div>
-            <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
-            <div class="promo__link">
-               или 
-               <a href="#">перейти в каталог</a>
-            </div>
-         </div>
-         
+	<section class="promo">
+		<div class="container">
+			<header class="header">
+				<a href="#" class="header__logo"> <!-- логотип как ссылка на главную страниц -->
+					<img src="icons/logo.png" alt="">
+				</a> 
+				<div class="header__official">
+					Официальный представитель
+					<span>Garmin, Polar, Suunto</span>
+				</div>
+				<div class="header__contacts">
+					<a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74 </a> <!-- телефон всегда как ссылка -->
+					<button class="button button__buy">Заказать звонок</button>
+				</div>
+			</header>
+			<div class="promo__wrapper">
+				<h1 class="promo__header">Подбор пульсометра
+				</h1>
+				<h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
+				<div class="promo__icons">
+					<div class="promo__icon">
+						<img src="icons/main1 icon.png" alt="icon1">
+						Время подбора: 
+						10 минут
+					</div>
+					<div class="promo__icon">
+						<img src="icons/main2 icon.png" alt="icon2">
+						Бесплатная 
+						доставка
+					</div>
+					<div class="promo__icon">
+						<img src="icons/main3 icon.png" alt="icon3">
+						Ответим 
+						на все вопросы
+					</div>
+				</div>
+				<button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+				<div class="promo__link">
+					или 
+					<a href="#">перейти в каталог</a>
+				</div>
+			</div>
+			
 
 
 
-      </div>
-   </section>
-   
-   <section class="test test_bg">
-      <div class="container">
-         <div class="test__wrapper">
-            <h1 class="test__header">НАШИ ПРЕИМУЩЕСТВА</h1>
-            <div class="test__items">
-               <div class="test__item">
-                  <img src="icons/test1 icon.png" alt="icon1">
-                  <h3 class="test__title">Делимся опытом</h3>
-                  <div class="test__descr">Наши сотрудники всегда готовы поделиться своим опытом, 
-                     так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
-               </div>
-               <div class="test__item">
-                  <img src="icons/test2 icon.png" alt="icon2">
-                  <h3 class="test__title">Заботимся о здоровье</h3>
-                  <div class="test__descr">Мы работаем для того, 
-                     чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
-                     </div>
-               </div>
-               <div class="test__item">
-                  <img src="icons/test3 icon.png" alt="icon3">
-                  <h3 class="test__title">Учим бегать</h3>
-                  <div class="test__descr">Помогаем с обучением 
-                     правильной технике бега! 
-                     Дружим с крупнейшей школой бега в России -<br><span>I LOVE RUNNING.</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+		</div>
+	</section>
+	
+	<section class="test test_bg">
+		<div class="container">
+			<div class="test__wrapper">
+				<h1 class="title">НАШИ ПРЕИМУЩЕСТВА</h1>
+				<div class="test__items">
+					<div class="test__item">
+						<img src="icons/test1 icon.png" alt="icon1">
+						<div>
+							<h3 class="test__title">Делимся опытом</h3>
+							<div class="test__descr">Наши сотрудники всегда готовы поделиться своим опытом, 
+							так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
+						</div>
+					</div>
+					<div class="test__item">
+						<img src="icons/test2 icon.png" alt="icon2">
+						<div>
+							<h3 class="test__title">Заботимся о здоровье</h3>
+							<div class="test__descr">Мы работаем для того, 
+							чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+							</div>
+						</div>
+						
+					</div>
+					<div class="test__item">
+						<img src="icons/test3 icon.png" alt="icon3">
+						<div>
+							<h3 class="test__title">Учим бегать</h3>
+							<div class="test__descr">Помогаем с обучением 
+							правильной технике бега! 
+							Дружим с крупнейшей школой бега в России -<br> <a href="#">I LOVE RUNNING.</a>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="consult">
+		<div class="container">
+			<h2 class="title title_left">
+				Получите бесплатную консультацию <br>
+				по подбору пульсометра 
+			</h2>
+			<div class="consult__descr">
+				Просто заполните форму заявки <br>
+				и мы перезвоним вам в течении 10 минут
+			</div>
+			<form class="feed-form" action="#"">
+				<input name="name" required placeholder="Ваше имя" type="text">
+				<input name="phone" required placeholder="Ваш телефон" type="number">
+				<input name="email" required placeholder="Ваш E-mail" type="email">
+
+				<button class="button button_submit">Заказать консультацию</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="carousel">
+		<div class="container">
+			<div class="carousel__inner">
+				<div>
+					<img src="img/photo1.png" alt="slide1">
+				</div>
+				<div>
+					<img src="img/photo2.png" alt="slide2">
+				</div>
+				<div>
+					<img src="img/photo3.png" alt="slide3">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="catalog">
+		<div class="container">
+			<h2 class="title">Каталог пульсометров</h2>
+			<ul class="catalog__tabs">
+				<li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
+				<li class="catalog__tab"><div>Для бега</div></li>
+				<li class="catalog__tab"><div>Для триатлона</div></li>
+			</ul>
+
+			<div class="catalog__content">
+				<div class="cataog-item">
+					<img src="img/puls_photo.png" alt="pulsometr" class="catalogitem__img">
+					<div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+					<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+					<a href="" class="catalog-item__link">Подробнее</a>
+					<hr>
+
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">4 750 руб.</div>
+							<div class="catalog-item__price">4 500 руб.</div>
+						</div>
+						<button class="catalog-item__btn">Купить</batton>
+					</div>
+				</div>
+			</div>
+			<div class="catalog__content"></div>
+			<div class="catalog__content"></div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- сперва идет подключение библиотеки jQuery, потом идет библитека, а потом свой файл скрипта -->
 </body>
 </html>
